@@ -9,7 +9,9 @@
   }
 }
 
-/* underline & transition on header span  */
+body {
+  background-color: #040714;
+}
 
 span {
   position: relative;
