@@ -54,6 +54,15 @@ const Carousel = styled(Slider)`
   .slick-list {
     overflow: visible;
   }
+  ul li button {
+    &:before {
+      font-size: 10px;
+      color: rgb(150, 158, 171);
+    }
+  }
+  li.slick-active button:before {
+    color: white;
+  }
   button {
     z-index: 1;
   }
