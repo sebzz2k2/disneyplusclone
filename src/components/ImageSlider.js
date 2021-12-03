@@ -69,4 +69,6 @@ const Carousel = styled(Slider)`
 `;
 const Wrap = styled.div`
   cursor: pointer;
+  box-shadow: rgba(0 0 0 /69%) 0px 26px 30px -10px,
+    rgb(0 0 0 /73%) 0px 16px 10px -10px;
 `;
