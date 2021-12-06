@@ -13,7 +13,7 @@ function Detail() {
             className=" w-full h-full object-cover"
           />
         </Background>
-        <ImageTitle className=" ">
+        <ImageTitle className="">
           <img
             src="/images/viewers-starwars.png"
             alt=""
