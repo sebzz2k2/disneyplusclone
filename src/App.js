@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Detail from "./components/Detail";
 import Login from "./components/Login";
 
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 
@@ -14,11 +14,17 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Routes>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/detail" element={<Detail />}></Route>
-          <Route exact path="/" element={<Home />} />
-        </Routes>
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/detail">
+            <Detail />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
       </Router>
     </div>
   );
